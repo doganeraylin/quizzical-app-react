@@ -76,8 +76,8 @@ body {
     margin-bottom: 1em;
 }
 
-.options,
-.selected-option {
+.answers,
+.selected-answer {
     padding: .3em .8em;
     margin: .5em;
     font-size: .7rem;
@@ -88,6 +88,6 @@ body {
 }
 
 
-.selected-option {
+.selected-answer {
     background-color: #D6DBF5;
 }
