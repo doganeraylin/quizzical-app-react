@@ -45,8 +45,8 @@ export default function App() {
         <Quiz
             key = {item.id}
             question={item.question}
-            correctOption={item.correct_answer}  
-            incorrectOption={item.incorrect_answers[Object.keys(item.incorrect_answers)[Math.floor(Math.random() * Object.keys(item.incorrect_answers).length )]]}      
+            correctAnswer={item.correct_answer}  
+            incorrectAnswer={item.incorrect_answers}      
         />
     ) 
   })        
