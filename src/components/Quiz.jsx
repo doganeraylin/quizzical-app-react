@@ -15,14 +15,19 @@ export default function Quiz (props) {
         <>
             <div className="quiz-container">
                 <h1 className="question">{props.question}</h1>
-                <div className="options-container">
-                    <button className={selected ? "selected-option" : "options"}>
-                        {props.correctOption}
+                <div className="answers-container">
+                    <button className={selected ? "selected-answer" : "answers"}>
+                        {props.correctAnswer}
                     </button>
-                
-                   {Object.keys(props.incorrectOption).length > 1 && <button className={selected ? "selected-option" : "options"}>
-                        {props.incorrectOption}
+                    <button className={selected ? "selected-answer" : "answers"}>
+                        {props.incorrectAnswer}
+                    </button>
+                   {Object.keys(props.incorrectAnswer).length > 1 && <button className={selected ? "selected-answer" : "answers"}>
+                        {props.incorrectAnswer}
                     </button>}   
+                    {Object.keys(props.incorrectAnswer).length > 1 && <button className={selected ? "selected-answer" : "answers"}>
+                        {props.incorrectAnswer}
+                    </button>}  
                 </div>
             </div>
         </>
