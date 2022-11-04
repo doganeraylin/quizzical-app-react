@@ -40,13 +40,13 @@ export default function App() {
       .then(data => setTriviaData(data.results))
   }, []) 
 
-  const quizQuestions = triviaData.map(item => {
+  const quizQuestions = triviaData.map((item, i) => {
     return (
         <Quiz
-            key = {item.id}
+            key = {i}
             question={item.question}
             correctAnswer={item.correct_answer}  
-            incorrectAnswer={item.incorrect_answers}      
+            incorrectAnswers={item.incorrect_answers}      
         />
     ) 
   })        
